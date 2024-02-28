@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,0.5);
+    visibility: visible;
+}
+
+.visibility-hidden{
+    visibility: hidden;
+}
+
+.modal-window{
+    position: relative;
+    margin: 10% auto;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: -2px 6px 13px 2px rgba(63,63,69,1);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo{
+    width: 150px;
+    margin: 20px
+}
+
+.button{
+    display: block;
+    cursor: pointer;
+    background-color: rgba(228, 236, 6);
+    color: blue;
+    font-size: large;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: -2px 6px 13px 2px rgba(16,19,222,1);
+    transition: all .3s ease;
+
+}
+
+.button:hover{
+    box-shadow: -2px 6px 13px 2px rgba(228, 236, 6);
+    background-color: rgba(16,19,222,1);
+    color: white;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    margin-top: 20px;
+    width: 80%;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    box-shadow: -1px 1px 20px 0px rgba(34,48,242,1);
+    border-radius: 3px;
+    align-items: center;
+    visibility: hidden;
+    transition: all 2s ease;
+}
+
+.visibility-visible{
+    visibility: visible;
+}
+
+.head{
+    display: flex;
+    padding: 20px;
+}
+
+.head img{
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: -1px 1px 20px 0px rgba(34,48,242,1);
+}
+
+.info-text{
+
+    margin-left: 50px;
+    color: rgb(62, 48, 166);
+    font-size:medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px 2px rgb(11, 192, 11);
+}
+
+.info-text h1{
+    margin-bottom: 20px;
+}
+
+h2{
+    color: rgb(62, 48, 166);
+    font-size:large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.clubs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.club{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 0px 0px 15px 0px rgba(12,16,237,1);
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size:medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       
+}
+
+.club img{
+    width: 220px;
+    height: 250px;
+}
+
+.club-name{
+    margin-top: 10px;
+}
+
+.gremio{
+    background: linear-gradient(90deg, rgba(181,5,53,1) 0%, rgb(12, 122, 241) 0%, rgba(0,1,8,1) 100%, rgba(9,8,9,1) 100%, rgba(3,7,164,0.9922093837535014) 100%);
+    color: white;
+}
+
+.psg{
+    background: linear-gradient(90deg, rgba(6,7,78,1) 0%, rgba(12,12,138,1) 21%, rgba(242,6,70,1) 52%, rgba(3,7,164,0.9922093837535014) 92%, rgba(2,5,106,1) 100%, rgba(0,1,8,1) 100%, rgba(9,8,9,1) 100%);
+    color: white;
+}
+
+.barcelona{
+    background: linear-gradient(90deg, rgba(6,7,78,1) 0%, rgba(242,6,70,1) 0%, rgba(3,3,99,1) 21%, rgba(191,8,74,1) 68%, rgba(3,6,120,0.9922093837535014) 92%, rgba(2,5,106,1) 100%, rgba(0,1,8,1) 100%, rgba(9,8,9,1) 100%);
+    color: white;
+}
+
+.milan{
+    background: linear-gradient(90deg, rgba(249,4,4,1) 0%, rgba(242,6,70,1) 0%, rgba(224,3,3,1) 0%, rgba(26,5,5,1) 24%, rgba(5,5,5,1) 44%, rgba(232,7,20,1) 65%, rgba(9,9,9,0.9922093837535014) 87%, rgba(8,8,8,1) 100%, rgba(0,1,8,1) 100%, rgba(9,8,9,1) 100%);
+    color: white;
+}
+
+.flamengo{
+    background: linear-gradient(180deg, rgba(249,4,4,1) 0%, rgba(242,6,70,1) 0%, rgba(224,3,3,1) 0%, rgba(4,4,4,1) 18%, rgba(26,5,5,1) 34%, rgba(148,4,4,1) 44%, rgba(232,7,20,1) 65%, rgba(9,9,9,0.9922093837535014) 87%, rgba(8,8,8,1) 100%, rgba(0,1,8,1) 100%, rgba(9,8,9,1) 100%);
+    color: white;
+}
+
+.atletico{
+    background: linear-gradient(180deg, rgba(242,6,70,1) 0%, rgba(1,1,1,1) 0%, rgba(255,248,248,1) 0%, rgba(5,5,5,1) 72%, rgba(0,1,8,1) 100%, rgba(9,8,9,1) 100%);
+    color: white;
+}
+
+.queretaro{
+    background: linear-gradient(90deg, rgba(242,6,70,1) 0%, rgba(1,1,1,1) 0%, rgba(50,124,224,1) 0%, rgba(0,0,0,1) 31%, rgba(44,119,235,1) 72%, rgba(0,1,8,1) 95%, rgba(9,8,9,1) 100%);
+    color: white;
+}
+
+.fluminense{
+    background: linear-gradient(90deg, rgb(185, 27, 70) 0%, rgba(1,1,1,1) 0%, rgb(185, 27, 70) 0%, rgb(34, 117, 21) 31%,rgb(185, 27, 70) 72%, rgb(34, 117, 21) 95%, rgb(34, 117, 21) 100%);
+    color: white;
+}
